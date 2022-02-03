@@ -23,7 +23,8 @@ function App() {
     });
   }
 
-  return <div className='App'>
+  return (
+  <div className='App'>
     <section className='controls'>
       <input
       type='number'
@@ -32,7 +33,8 @@ function App() {
     </section>
     <button onClick={getMealData}>Get Daily Meal Plan</button>
     {mealData && <MealList mealData={mealData}/>}
-  </div>;
+  </div>
+  );
 }
 
 export default App;
